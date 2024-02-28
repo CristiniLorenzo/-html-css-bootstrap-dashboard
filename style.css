@@ -41,7 +41,16 @@ aside ul li i{
 aside div i{
     padding-right: 0.7rem;
 }
+.ms-bg-blue{
+    background-color: #1B72E8;
+}
 
+.row aside{
+    width: 150px;
+}
+main{
+    background-color: red;
+}
 /*--------------
     MEDIA
 ------------- */
