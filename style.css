@@ -28,14 +28,13 @@ header li{
 .fa-bell{
     color: #FF8F00;
 }
-
 aside ul{
     list-style: none;
 }
 aside ul li i{
     padding-right: 0.7rem;
     padding-bottom: 0.7rem;
-    font-size: 1.1rem;
+    
 }
 
 aside div i{
@@ -48,8 +47,9 @@ aside div i{
 .row aside{
     width: 150px;
 }
-main{
+.row main{
     background-color: red;
+    /* width: calc(100% - 150px); */
 }
 /*--------------
     MEDIA
