@@ -63,6 +63,15 @@ main .container-fluid{
     font-weight: 700;
     margin-left: 16px;
 }
+
+table img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+table td button{
+    margin-right: 10px;
+}
 /*--------------
     MEDIA
 ------------- */
