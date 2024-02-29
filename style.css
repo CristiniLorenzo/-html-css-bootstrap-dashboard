@@ -1,8 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 header{
     height: 70px; 
 }
@@ -11,12 +7,15 @@ main, aside{
     height: calc(100vh - 70px);
 }
 aside{
-    width: 150px;
     background-color: #051E34;
     background-image: url(./img/sidebar-bg.png);
 }
-.logo-mobile{
+.logo-desk{
     display: none;
+}
+.logo-mobile{
+    height: 50px;
+    width: 50px;
 }
 header ul{
     list-style: none;
@@ -28,19 +27,28 @@ a{
     text-decoration: none;
 }
 header li{
-    padding: 0 10px;
+    padding: 0 10px;      
+}
+header ul li{
+    display: none;
+}
+header ul .dropdown{
+    display: block;
 }
 .fa-bell{
     color: #FF8F00;
 }
 aside ul{
     list-style: none;
+    padding-left: 0;
 }
 aside ul li i{
     padding-right: 0.7rem;
     padding-bottom: 0.7rem; 
 }
-
+.row aside span{
+    display: none;
+}
 aside div i{
     padding-right: 0.7rem;
 }
@@ -49,7 +57,7 @@ aside div i{
 }
 
 .row aside{
-    width: 150px;
+    width: 100px;
 }
 main .container-fluid{
     padding: 0px;
@@ -74,12 +82,26 @@ table td button{
 }
 .card{
     margin-top: 2rem;
+    
 }
 /*--------------
     MEDIA
 ------------- */
-/* @media screen and (min-width="768px"){
+@media screen and (min-width: 768px){
    .logo-mobile{
-        display: block;
-   } 
-} */
+    display: none;    
+}
+   .logo-desk{
+    display: block;
+}
+    header ul li{
+    display: block;
+}
+    .row aside{
+    width: 150px;
+}
+    .row aside span{
+    display: inline;
+}
+
+}
