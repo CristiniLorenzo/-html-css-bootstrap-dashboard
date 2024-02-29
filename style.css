@@ -55,12 +55,17 @@ aside div i{
 .ms-bg-blue{
     background-color: #1B72E8;
 }
-
+.ms-no-mobile{
+    display: none;
+}
 .row aside{
     width: 100px;
 }
 main .container-fluid{
     padding: 0px;
+}
+.ms-pill-desk{
+    display: none;
 }
 .ms-btn{
     border: 1px solid #fff;
@@ -71,6 +76,16 @@ main .container-fluid{
     font-weight: 700;
     margin-left: 16px;
 }
+main .ms-bg-blue .col-lg-6{
+    order: 2;
+}
+main .ms-bg-blue .col-lg-4{
+    order: 3;
+}
+main .ms-bg-blue .col-lg-2{
+    order: 1;
+}
+
 
 table img{
     width: 2rem;
@@ -88,20 +103,44 @@ table td button{
     MEDIA
 ------------- */
 @media screen and (min-width: 768px){
-   .logo-mobile{
-    display: none;    
+    .order-2{
+    order: 1;
+    }
+    .order-3{
+    order: 2;
+    }
+    .order-1{
+    order: 3;
+    }
+    .ms-no-mobile{
+        display: table-cell;
+    }
 }
-   .logo-desk{
-    display: block;
-}
-    header ul li{
-    display: block;
-}
-    .row aside{
-    width: 150px;
-}
-    .row aside span{
-    display: inline;
+@media screen and (min-width: 992px){
+    .logo-mobile{
+        display: none;    
+    }
+       .logo-desk{
+        display: block;
+    }
+        header ul li{
+        display: block;
+    }
+        .row aside{
+        width: 150px;
+    }
+        .row aside span{
+        display: inline;
+    }
+        main col-lg-2{
+        justify-content: flex-end;
+    }
+    
+    .ms-pill-desk{
+        display: inline;
+    }
+    .ms-pill-mobile{
+        display: none;
+    }
 }
 
-}
